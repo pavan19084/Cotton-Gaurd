@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sgp/SolutionPage.dart';
 import 'package:sgp/ScanPage.dart';
-import 'package:sgp/NotificationPage.dart';
+import 'package:sgp/notification_page.dart';
 
 class Home extends StatefulWidget {
   final String language; // Add language parameter to the Home widget
