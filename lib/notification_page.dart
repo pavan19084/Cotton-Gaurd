@@ -27,14 +27,12 @@ class NotificationPage extends StatelessWidget {
                 context: context,
                 builder: (BuildContext context) {
                   return Dialog(
-                    child: Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: MediaQuery.of(context).size.height,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage(notification['image']),
-                          fit: BoxFit.contain,
-                        ),
+                    child: SizedBox(
+                      width: 400,
+                      height: 400, // Set initial height
+                      child: Image.asset(
+                        notification['image'],
+                        fit: BoxFit.contain,
                       ),
                     ),
                   );

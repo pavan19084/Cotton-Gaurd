@@ -1,16 +1,23 @@
 List<Map<String, dynamic>> notifications(String language) => [
-  for (var notification in _notifications)
-    {
-      'description': language == 'eng' ? notification['eng_description'] : notification['guj_description'],
-      'image': notification['image'],
-    }
-];
+      for (var notification in _notifications)
+        {
+          'description': language == 'eng'
+              ? notification['eng_description']
+              : notification['guj_description'],
+          'image': notification['image'],
+        }
+    ];
 
 final _notifications = [
   {
     'eng_description': 'Here the Price at jamjodhpur Marketing yard',
     'guj_description': 'અહીં જામજોધપુર માર્કેટિંગ યાર્ડમાં ભાવ',
     'image': 'assets/notification_1.jpg',
+  },
+  {
+    'eng_description': 'Good news for Cotton farmer',
+    'guj_description': 'આનંદો હવે કપાશ ના ખેડૂત મોજ માં  ',
+    'image': 'assets/notification_10.jpg',
   },
   {
     'eng_description': 'Some new info',
@@ -50,6 +57,6 @@ final _notifications = [
   {
     'eng_description': 'Skymet weather forcast',
     'guj_description': 'Skymet Weather Forcast',
-    'image': 'assets/notification_8.jpg',
+    'image': 'assets/notification_9.jpg',
   },
 ];
